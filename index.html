@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="header">
+    <div class="oner">
+      <ul>
+         <li>
+            <a class="tg bt" href="https://t.me/The0123" target="_blank">
+               <i class="fa-solid fa-paper-plane"></i> Telegram
+            </a>
+         </li>
+         <li>
+            <a class="in bt" href="https://www.instagram.com/1.asad.akeee/" target="_blank">
+               <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+         </li>
+         <li>
+            <a class="yt bt" href="https://www.youtube.com/@MY_VERSES" target="_blank">
+               <i class="fa-brands fa-youtube"></i> Youtube
+            </a>
+         </li>
+      </ul>
+    </div>
+    <div class="twor">
+       <a class="batn" href="">Know More</a>
+       <a class="bar" href="#">
+          <i class="fa-solid fa-bars"></i>
+       </a>
+    </div>
+   </div>
+   <div class="position">
+     
+            <a class="tg lt yu" href="https://t.me/The0123" target="_blank">
+               <i class="fa-solid fa-paper-plane"></i> Telegram
+            </a>
+            <a class="in lt" href="https://www.instagram.com/1.asad.akeee/" target="_blank">
+               <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+         
+            <a class="yt lt" href="https://www.youtube.com/@MY_VERSES" target="_blank">
+               <i class="fa-brands fa-youtube"></i> Youtube
+            </a>
+   </div>
+   <div class="big">
+      <h2>The Data <span class="inform">Inform</span></h2>
+   <p id = "upper">This Is Test System For Example</p>
+   <input type = "text" id = "inp"> <br> <br>
+   <button id = "btn" onclick = "changeImage()"> Click to change the Text </button>
+   <p id = "para1">Put SomeThing <span class="nm">(Name or Phone)</span></p>
+   <!-- <p id = "para2">This is the initial text of Para2.</p> -->
+   </div>
+   <script>
+      let bar = document.querySelector('.bar');
+      let position = document.querySelector('.position');
+      let fabars = document.querySelector('.fa-bars')
+
+     bar.addEventListener('click', function(){
+      fabars.classList.toggle('fa-times')
+    position.classList.toggle('show')
+    });
+      var para1 = document.getElementById("para1");
+      // var para2 = document.getElementById("para2");
+      function changeImage() {
+         var inp = document.getElementById("inp");
+         var enteredText = inp.value;
+         para1.innerText = enteredText + ", Your Result Of The Word That You Typed. ";
+         // para2.innerHTML = " <u> " + enteredText + " </u> " + ", <b> This text is changed using the <em> innerHTML </em> property. <b> <br> ";
+      }
+   </script>
+</body>
+</html>
